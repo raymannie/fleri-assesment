@@ -1,0 +1,183 @@
+// 
+    // Base
+
+    // @package eyowo
+    // @author  Rahman Are <psybug>
+    // @version 1.0.0
+
+// Resets
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap')
+
+@font-face
+    font-family: 'Matter'
+    src: url('../assets/fonts/Matter-SemiBold.woff2') format('woff2'), url('../assets/fonts/Matter-SemiBold.woff') format('woff'), url('../assets/fonts/Matter-SemiBold.ttf') format('truetype')
+    font-weight: 600
+    font-style: normal
+    font-display: swap
+
+@font-face
+    font-family: 'Matter'
+    src: url('../assets/fonts/Matter-Medium.woff2') format('woff2'), url('../assets/fonts/Matter-Medium.woff') format('woff'), url('../assets/fonts/Matter-Medium.ttf') format('truetype')
+    font-weight: 500
+    font-style: normal
+    font-display: swap
+
+@font-face
+    font-family: 'Matter'
+    src: url('../assets/fonts/Matter-Regular.woff2') format('woff2'), url('../assets/fonts/Matter-Regular.woff') format('woff'), url('../assets/fonts/Matter-Regular.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+@font-face
+    font-family: 'Matter'
+    src: url('../assets/fonts/Matter-Light.woff2') format('woff2'), url('../assets/fonts/Matter-Light.woff') format('woff'), url('../assets/fonts/Matter-Light.ttf') format('truetype')
+    font-weight: 300
+    font-style: normal
+    font-display: swap
+
+
+
+$basefont: 16px
+$font10: 0.625rem
+$font12: 0.75rem
+$font14: 0.875rem
+$font16: 1rem
+$font18: 1.125rem
+$font20: 1.25rem
+$font21: #{21/16}rem
+$font24: 1.5rem
+$font28: 1.6rem
+$font30: 1.875rem
+$font32: 2rem
+$font36: 2.25rem
+$font40: 2.5rem
+$font48: 3rem
+$font64: 4rem
+
+$space-8: 0.5rem
+$space-10: 0.625rem
+$space-12: 0.75rem
+$space-16: 1rem
+$space-20: 1.25rem
+$space-24: 1.5rem
+$space-28: 1.75rem
+$space-30: 1.875rem
+$space-32: 2rem
+$space-36: 2.25rem
+$space-40: 2.5rem
+$space-44: 2.75rem
+$space-48: 3rem
+$space-52: 3.25rem
+$space-56: 3.5rem
+$space-60: 3.75rem
+$space-64: 4rem
+
+$codegray: #7A7978
+
+$bodyfont: 'Matter', sans-serif
+// $headingfont: 'Be Vietnam Pro', sans-serif
+// $contentfont: 'Be Vietnam Pro', sans-serif
+$bordercolor: var(--border-color)
+\:root
+    --bodyfont: 'Matter', sans-serif
+    --codegray: #7A7978
+    --border-color: #E8EEF8
+    --white: white
+    --light-bg: #F4F5F7
+    --light-gray: #F3F6FB
+    --primary: #275FFF
+    --light-primary: #8089BB
+    --secondary: #2C3B8E
+    --dark: #333333
+
+html
+    font-size:                  $basefont
+    // background-color:           $defaultwhite
+    -webkit-font-smoothing:     antialiased
+    scroll-behavior: smooth
+
+body
+    color:          var(--codegray)
+    // background-color:           $defaultwhite
+    // font-family: 'Inter', sans-serif
+    font-family:    var(--bodyfont)
+    // -moz-osx-font-smoothing: grayscale
+    line-height:    normal
+    
+
+*,
+*::before,
+*::after
+    box-sizing: border-box
+
+*
+    outline-color: inherit
+    outline: none
+    a
+        outline: none
+    button
+        outline: none
+
+body
+    margin: 0
+    // font-family: $bodyfont
+    font-weight: 400
+    font-size: $font16
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    line-height: normal
+    overflow-x: hidden
+    letter-spacing: -0.5px
+    
+
+p
+    margin: 0
+    
+a,
+.as-link
+    text-decoration: none
+    cursor: pointer
+    color: unset
+    transition: all 0.32s ease-out
+    // &:focus
+    &:hover
+        text-decoration: none
+        color:                  inherit
+        // color:                  $primarycolor
+
+
+audio, canvas, img, video
+    display: block
+    max-width: unset
+
+svg
+    max-width: none
+    pointer-events: none
+    vertical-align: middle
+    fill: inherit
+    // transition:                 all 0.32s ease
+
+ul
+    padding: 0
+    list-style: none
+    margin: 0
+
+// Buttons, Inputs, 
+button
+    background: none
+    outline: none
+    font-family:    var(--bodyfont)
+
+input
+    &[type="email"],
+    &[type="submit"],
+    &[type="reset"],
+    &[type="button"]
+        background: none
+        border: 0
+        color: inherit
+        font-size: inherit
+        font-family: inherit
+        font-style: normal

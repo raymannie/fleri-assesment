@@ -1,0 +1,27 @@
+// Media Queries
+$smalldown: "only screen and (max-width: 640px)"
+$smallup: "only screen and (min-width: 641px)"
+
+$mediumdown: "screen and (max-width: 768px)"
+$mediumup: "screen and (min-width: 769px)"
+
+$largedown: "screen and (max-width: 1351px)"
+$largeup: "screen and (min-width: 1350px)"
+
+// $xlargedown: "screen and (max-width: 1280px)"
+// $xlargeup: "screen and (min-width: 1281px)"
+
+$xxlargedown: "screen and (max-width: 1536px)"
+$xxlargeup: "screen and (min-width: 1537px)"
+
+$breakpoints: ( 'small': 767px, 'medium': 992px, 'large': 1200px ) !default
+
+@mixin respond-to($breakpoint)
+
+    @if map-has-key($breakpoints, $breakpoint)
+
+        @media (min-width: map-get($breakpoints, $breakpoint))
+            @content
+
+    @else
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. " + "Available breakpoints are: #{map-keys($breakpoints)}."
