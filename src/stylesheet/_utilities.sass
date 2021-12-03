@@ -7,6 +7,7 @@
 // Positioning
 
 
+
 .absolute-zero
     position:           absolute
     top:                0
@@ -79,6 +80,7 @@ $dirctn: ("t": "top", "b": "bottom", "l": "left", "r": "right")
 .mx-auto
     margin-right:       auto
     margin-left:        auto
+
 
 
 //margin and padding
@@ -186,7 +188,7 @@ $displayoptions: (display, align-items, align-self, justify-content, flex-direct
         $column: 12
         @for $i from 1 through $column
             .col-#{$i}#{$sizeName}
-                flex: 0 0 100% / $column * $i
+                flex: 0 0 100% / $column * $i 
             .col-offset-#{$i}#{$sizeName}
                 margin-left: 100% / $column * $i
         .row#{$sizeName}
