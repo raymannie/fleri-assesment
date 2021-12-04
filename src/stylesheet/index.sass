@@ -362,35 +362,36 @@ h1, h2, h3, h4
             > div:nth-child(2)
                 flex: 0.6
         .plan-table &, .application-table &
+            > div
+                @media #{ $smalldown }
+                    min-width: 150px
             > div:nth-child(1)
-                flex: 0.16
-                @media #{ $smalldown }
-                    min-width: 150px
+                flex: 0.25
             > div:nth-child(2)
-                flex: 0.2
-                @media #{ $smalldown }
-                    min-width: 150px
+                flex: 0.16
             > div:nth-child(3)
-                flex: 0.13
-                @media #{ $smalldown }
-                    min-width: 150px
+                flex: 0.1
             > div:nth-child(4)
-                flex: 0.13
-                @media #{ $smalldown }
-                    min-width: 150px
+                flex: 0.1
             > div:nth-child(5)
                 flex: 0.2
-                @media #{ $smalldown }
-                    min-width: 150px
             > div:nth-child(6)
                 flex: 0.15
-                @media #{ $smalldown }
-                    min-width: 150px
         .application-table &
             > div:nth-child(5)
                 flex: 0.3
-                @media #{ $smalldown }
-                    min-width: 150px
+        .abbr
+            display: inline-flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            width: 30px
+            height: 30px
+            font-size: 12px
+            color: #FFC42E
+            background-color: #FFF3D5
+            border-radius: 50%
+            margin-right: 8px
             
     &__content
         padding: 0 32px

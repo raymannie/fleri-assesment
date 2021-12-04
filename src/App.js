@@ -70,12 +70,12 @@ function App() {
                   <div className="table-card__content">
                     {tableData.slice(0, 3).map((data) =>
                     <div className="table-card__row">
-                      <div className="co-secondary fw-normal">{data.name}</div>
+                      <div className="co-secondary fw-normal "><span className="abbr">AO</span>{data.name}</div>
                       <div className="">{data.plan}</div>
                       <div className="">{data.tier}</div>
                       <div className="">{data.price}</div>
                       <div className="">
-                        <div className="d-iflx al-i-c">
+                        <div className="d-iflx al-i-c f-12">
                           <div className="usage-bar">
                             <span style={{width: data.usage}}></span>
                           </div>
