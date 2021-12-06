@@ -33,7 +33,7 @@ const TableRow = ({children}) => {
 
 const TableFoot = ({children}) => {
     return ( 
-        <div className="table-card__row">
+        <div className="table-card__foot">
             {children}
         </div>
      );
