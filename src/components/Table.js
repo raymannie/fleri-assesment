@@ -1,4 +1,4 @@
-const Table = ({className, ...children}) => {
+const Table = ({className, children}) => {
     return ( 
         <div className={`table-card ${className}`}>
         {children}
@@ -6,7 +6,7 @@ const Table = ({className, ...children}) => {
      );
 }
 
-const TableHead = ({...children}) => {
+const TableHead = ({children}) => {
     return ( 
         <div className="table-card__head">
         {children}
@@ -14,7 +14,7 @@ const TableHead = ({...children}) => {
      );
 }
 
-const TableContent = ({...children}) => {
+const TableContent = ({children}) => {
     return ( 
         <div className="table-card__content">
             {children}
@@ -23,7 +23,7 @@ const TableContent = ({...children}) => {
 }
  
 
-const TableRow = ({...children}) => {
+const TableRow = ({children}) => {
     return ( 
         <div className="table-card__row">
             {children}
@@ -31,7 +31,7 @@ const TableRow = ({...children}) => {
      );
 }
 
-const TableFoot = ({...children}) => {
+const TableFoot = ({children}) => {
     return ( 
         <div className="table-card__row">
             {children}

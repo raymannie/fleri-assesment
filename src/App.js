@@ -12,7 +12,9 @@ function App() {
   
   return (
     <div className="App app-body">
+
       <Navigation logo={logo} avartar={avartar} navData={navData} />
+
       <div className="main">
         <div className="main__content">
           <div className="flex-fs-sb mb-44 flx-w">
@@ -22,6 +24,7 @@ function App() {
             </div>
             <Button btnSize="big" label="Add new beneficiary" icon="add-icon" />
           </div>
+
           <Summary summaryData={summaryData} />
           <PageTable tableData={tableData} />
         </div>
